@@ -1,0 +1,65 @@
+{
+  "fileName": "manifest",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "appdescr_variant",
+  "reference": "ui.s2p.mm.pur.ctr.maintain.sts1",
+  "id": "customer.ZMM_PCTR_ST_MTS1",
+  "namespace": "apps/ui.s2p.mm.pur.ctr.maintain.sts1/appVariants/customer.ZMM_PCTR_ST_MTS1/",
+  "content": [
+    {
+        "changeType": "appdescr_ui5_addNewModel",
+        "content": {
+            "dataSource": {
+                "customer.customerTypeDataSource": {
+                    "uri": "/sap/opu/odata/sap/ZPTP_C_PROJ_TRCK_RESTRICT_CDS",
+                    "type": "OData",
+                    "settings": {
+                        "odataVersion": "2.0"
+                    }
+                }
+            },
+            "model": {
+                "customer.customerType": {
+                    "dataSource": "customer.customerTypeDataSource",
+                    "preload": true,
+                    "settings": {}
+                }
+            }
+        }
+    },
+    {
+      "changeType": "appdescr_app_setTitle",
+      "content": {},
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ListReport|C_ContractMaintain"
+      },
+      "texts": {
+        "i18n": "i18n/ListReport/C_ContractMaintain/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_ContractMaintain"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_ContractMaintain/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|to_ContractMaintainItem"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_ContractMaintainItem/i18n.properties"
+      }
+    }
+  ]
+}
